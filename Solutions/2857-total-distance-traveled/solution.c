@@ -1,11 +1,9 @@
-int distanceTraveled(int mainTank, int additionalTank) 
-{
+int distanceTraveled(int mainTank, int additionalTank){ 
     int milage=10;
     int consumption=0;
     int traveldistance=0;
-    while(mainTank!=0)
-    {
-        consumption=mainTank>=5? 5:mainTank;
+    while(mainTank!=0){
+       consumption=mainTank>=5? 5:mainTank;
         mainTank=mainTank-consumption;
         int currentDistance=consumption*milage;
         traveldistance=traveldistance+currentDistance;
@@ -13,7 +11,6 @@ int distanceTraveled(int mainTank, int additionalTank)
          additionalTank--;
          mainTank++;
         }
-    }
-    return traveldistance;
+    }return traveldistance;
 }    
 
