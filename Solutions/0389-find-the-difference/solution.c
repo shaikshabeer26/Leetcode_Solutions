@@ -1,0 +1,11 @@
+char findTheDifference(char* s, char* t) {
+    int result=0;
+    for(int i=0;s[i]!=0;i++){
+        result=result^s[i];
+    }
+    for(int i=0;t[i]!=0;i++)
+    {
+        result=result^t[i];
+    }
+    return (char)result;
+}
