@@ -14,6 +14,7 @@ class Solution {
                             break;
                         }
                     }
-            } return twoSum;
+            } 
+        return twoSum;
     }
 }
