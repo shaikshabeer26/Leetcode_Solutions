@@ -4,7 +4,7 @@ delete p1
 from Person p1, Person p2
 where p1.Email = p2.Email 
 and p1.id>p2.Id;*/
-/* Write your PL/SQL query statement below */
+/* Write your PL/SQL query statement below *
 DELETE FROM Person 
 WHERE id IN (
     SELECT a.id
@@ -14,5 +14,6 @@ WHERE id IN (
         FROM Person
     ) a
     WHERE a.rn > 1
-);
+);*/
+delete from person p where p.id not in (select min(id) from person group by email);
 
