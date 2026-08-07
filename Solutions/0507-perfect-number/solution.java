@@ -9,7 +9,8 @@ class Solution {
             }
             i++;
         }
-        if(temp==num) return true;
-        else return false;
+        // if(temp==num) return true;
+        // else return false;
+         return (temp==num)?  true : false;
     }
 }
