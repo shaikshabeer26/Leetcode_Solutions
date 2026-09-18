@@ -1,8 +1,8 @@
 import java.util.*;
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
-    if(nums.length==1) return nums;
-    else{
+    // if(nums.length==1) return nums;
+    // else{
     HashMap<Integer,Integer> h=new HashMap();
     for (int num : nums) {
     h.put(num, h.getOrDefault(num, 0) + 1);
@@ -14,6 +14,6 @@ class Solution {
             result[i] = elements.get(i);
         }
         return result;
-        }
+       // }
     }
 }
