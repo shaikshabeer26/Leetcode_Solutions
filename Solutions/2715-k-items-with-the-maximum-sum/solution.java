@@ -4,7 +4,8 @@ class Solution {
     // else if((nO+nZ)>=k) return nO;
     // else {
     //     return nO-(k-(nO+nZ));
-    return (nO>=k)? k:(nO+nZ>=k)? nO:nO-(k-(nO+nZ));
+    //}
+    return (nO>=k)? k:(nO+nZ>=k)? nO:nO-(k-(nO+nZ)); //1ms beats:99.93%
     
     }
 }
