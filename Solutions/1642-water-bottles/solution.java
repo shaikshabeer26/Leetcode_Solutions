@@ -1,6 +1,6 @@
 class Solution {
     public int numWaterBottles(int nB, int nE) {
-     int c=nB, empty=nB,t;
+     int empty=nB,t;
        /* while(empty>=nE)
         {
             empty-=nE;
@@ -10,11 +10,11 @@ class Solution {
         while(empty>=nE)
         {
          t=empty/nE;
-         c+=t;
+         nB+=t;
          empty-=(t*nE);
          empty+=t;
         }
-        return c;
+        return nB;
         
     }
 }
