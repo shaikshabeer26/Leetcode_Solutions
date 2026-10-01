@@ -1,24 +1,23 @@
+import java.util.*;
+import java.lang.*;
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-      int l=nums.length; // int l=Sizeof( nums[]);
-      /***  for(int i=0;i<l-1;i++)
-        {
-            for (int j=i+1;j<l;j++)
-            {
-                if(nums[i]==nums[j])
-                return true;
-            }
-         //if(i==l-2)
-         //return false;
-        }
-        return false;***/
-        Arrays.sort(nums);
-        for(int i=0;i<l-1;i++)
-        {
-            if(nums[i]==nums[i+1])
-            return true;
-        }
-     return false;
+    int n=nums.length;
+    Arrays.sort(nums);
+    for(int i=0,j=i+1;i<n-1&&j<=n-1;i++,j++)
+    {
+        if(nums[i]==nums[j]) return true;
+    }
+    return false;
+
+    //  for(int i=0;i<n-1;i++)
+    //  {
+    //     for(int j=i+1;j<n;j++)
+    //     {
+    //      if(nums[i]==nums[j]) return true;
+    //     }
+    //  }
+    //  return false;
     }
 }
 
