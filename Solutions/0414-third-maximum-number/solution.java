@@ -26,6 +26,7 @@ class Solution {
         }
         if(count<2) return nums[n-1];
         else return res;*/
+/*-------------Approach Threee----------------------*///without sorting the given arrray
        long max=Long.MIN_VALUE;
        long smax=max;
        long tmax=max;
