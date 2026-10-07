@@ -10,7 +10,7 @@ class Solution {
     else res[right--]=temp;
     return res;*/
     /*-----Approach-2-------*/
-    int low=0,high=n-1;
+    /*int low=0,high=n-1;
 while(low!=high)
 {
 if(nums[low]%2!=0)
@@ -22,8 +22,19 @@ if(nums[low]%2!=0)
 }
 else low++;
 }
-    return nums;
-
-
+    return nums; */
+/*---------Approach-3------*/
+int idx=0;
+for(int i=0;i<n;i++)
+{
+ if(nums[i]%2==0) 
+ {
+    int temp=nums[idx];
+    nums[idx]=nums[i];
+    nums[i]=temp;
+    idx++;
+ }
+}
+ return nums;
     }
 }
