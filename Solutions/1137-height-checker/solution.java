@@ -4,7 +4,7 @@ class Solution {
 /*-----------Approach number-1  ------------------------*/
     int expected[]=new int[n];
     for(int i=0;i<n;i++) expected[i]=heights[i];
-    Arrays.sort(heights);
+    Arrays.sort(expected);
     int count=0;
     for(int i=0;i<n;i++) if(expected[i]!=heights[i]) count++;
     return count;
