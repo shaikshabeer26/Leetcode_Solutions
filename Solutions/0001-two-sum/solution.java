@@ -10,7 +10,8 @@ class Solution {
                 {
                     temp[0]=i;
                 temp[1]=j;
-                //return temp;
+                //return temp;//
+                break;
                 }
             }
         }
