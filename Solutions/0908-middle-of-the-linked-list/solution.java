@@ -21,10 +21,11 @@ class Solution {
         //     temp=temp.next;
         // }
         // return temp;
-        /*-------Approach-2-------*/
+        /*-------Approach-2------using slow,fast pointer-*/
         ListNode slow=head;
         ListNode fast=head;
-        while(fast!=null&&fast.next!=null){
+        while(fast!=null&&fast.next!=null)//fast!=null for the even no.nodes and fast.next!=null is for the odd no.of nodes
+        {
             slow=slow.next;
             fast=fast.next.next;
             //fast=fast.next;
