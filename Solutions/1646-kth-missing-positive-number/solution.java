@@ -15,7 +15,7 @@ class Solution {
     return nums[n-1]+(k-count);
     */
 
-  int x=1,ans=0,i=0;
+  /*int x=1,ans=0,i=0;
   while(i<n&&k>0){                  //way two with same approach
     if(nums[i]==x){
         x++; 
@@ -25,15 +25,16 @@ class Solution {
      x++;
      k--;}
   }
-  return k==0? ans:nums[n-1]+k;
+  return k==0? ans:nums[n-1]+k;*/
+
  
- /* //efficient approach
+  //efficient approach
  for(int i=0;i<nums.length;i++)
  {
     if(nums[i]<=k) k++;
     else break;
  }
  return k;
- */
+ //*/
     }
 }
