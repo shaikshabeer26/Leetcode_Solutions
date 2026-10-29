@@ -6,7 +6,7 @@ class Solution {
                 t2++;
                 temp+=t2;
             }
-            else t2=0;
+          else t2=0;
         }
         return temp;
     }
