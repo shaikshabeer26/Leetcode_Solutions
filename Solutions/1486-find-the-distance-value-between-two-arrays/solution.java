@@ -7,7 +7,9 @@ class Solution {
         {
             int temp=0;
             for(int j=0;j<l2;j++){
-                if(Math.abs(arr1[i]-arr2[j])<=d) temp++;
+                if(Math.abs(arr1[i]-arr2[j])<=d){ temp++;
+                break;
+                }
             }
             if(temp==0) count++;
             
